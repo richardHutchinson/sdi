@@ -1,0 +1,306 @@
+/* theme colors */
+.color0 {color: #000000}
+.color1 {color: #4D4B39}
+.color2 {color: #E85B1F}
+.color3 {color: #94928B}
+
+/* default element colors */
+h1 {color: #4D4B39}
+h2 {color: #E85B1F}
+h3 {color: #94928B}
+h4 {color: #94928B}
+h5 {color: #4D4B39}
+h6 {color: #94928B}
+p {color: #4D4B39}
+li {color: #4D4B39}
+a {color: #4D4B39}
+a:hover {color: #E85B1F}
+
+#noscript a {color: #E85B1F}
+#noscript a:hover {text-decoration: underline;}
+
+.article a {color: #E85B1F}
+.article a:hover {text-decoration: underline}
+#alertBar {
+	display: block;
+	padding: 10px 20px;
+	background-color: red;
+	color: #fff;
+	width: 940px;
+}
+.titleBar1 {background: url("../images/pageElements/bg_bar.gif") no-repeat scroll 0 0 transparent; width: 100%;}
+.titleBar2 {background-color: #E1DED4}
+.tab1 .tabLeft {background-image: url(../images/pageElements/tab1Left.jpg)}
+.tab1 .tabCenter {background-image: url(../images/pageElements/tab1Center.jpg)}
+.tab1 .tabRight {background-image: url(../images/pageElements/tab1Right.jpg)}
+
+
+.instructionVideo {background-image: url(../images/pageElements/play.png)}
+
+.tab2 .tabLeft {
+	background-image: url(../images/pageElements/tab2Left.png);
+	background-position: 0px -21px;
+}
+.tab2 .tabCenter {
+	background-image: url(../images/pageElements/tab2Center.png);
+	background-position: 0px -21px;
+	color: #94928B
+}
+.tab2 .tabRight {
+	background-image: url(../images/pageElements/tab2Right.png);
+	background-position: 0px -21px;
+}
+.tab2.active .tabLeft {background-position: 0px 0px;}
+.tab2.active .tabCenter {
+	background-position: 0px 0px;
+	color: #ffffff;
+}
+.tab2.active .tabRight {background-position: 0px 0px;}
+
+.courseTab .tabLeft {background-image: url(../images/pageElements/coursesTabLeft.png);}
+.courseTab .tabCenter {
+	background-image: url(../images/pageElements/coursesTabCenter.png);
+	color: #94928B;
+}
+
+#courseNavigation {background: url("../images/pageElements/bg_bar.gif") no-repeat scroll 0 0;}
+	#courseNavigation li:first-child {
+		padding-left: 30px;
+	}
+#courseNavigation .active .courseTab .tabCenter,
+#courseNavigation li:hover .courseTab .tabCenter {
+	background-image: url(../images/pageElements/coursesTabCenter.png);
+	color: #E85B1F;
+}
+.courseTab .tabRight {background-image: url(../images/pageElements/coursesTabRight.png);}
+#courseNavigation .active,
+#courseNavigation li:hover {
+	z-index: 7;
+}
+
+.imgCaption {background-color: #E1DED4;}
+.imgCaption a {color: #E85B1F}
+
+
+/* background */
+body {
+	font-family: "Lucida Grande", "Arial", sans-serif;
+	background: #e1dfd3 url(../images/background/bgRepeat.jpg) repeat-x;
+}
+#backgroundWrapper {
+	background-image: url("../images/background/bg.jpg"); 
+}
+#contentWrapper {
+	border-color: #E1DED4;
+	background: #ffffff;
+}
+#footer a:hover {
+	color: #4D4B39;
+	text-decoration: underline;
+}
+
+
+/* header */
+#topLinksLeft {background: url(../images/header/toplinksLeft.jpg)}
+#topLinksRight {background: url(../images/header/toplinksRight.jpg)}
+	#topLinks li {background-color: #E1DED4;}
+		#topLinks li a:hover {border-color: #4D4B39}
+			
+h1#logo a {
+	height: 64px;
+	width: 199px;
+	background-image: url(../images/header/logo.gif);
+}
+	
+#instructorBox img {border-color: #E1DED4;}
+			
+
+/*--- Homepage ------------------------------------------------------------------------------------------------------------------------------------*/
+.featuredBox {background-color: #ffffff;}
+#featuredBoxContainer #featureBoxButtons #moreButton,
+#featuredBoxContainer #featureBoxButtons .featuredButton {
+	background-color: #819288;
+	color: #ffffff;
+}
+
+#featuredBoxContainer #featureBoxButtons #moreButton:hover,
+#featuredBoxContainer #featureBoxButtons .featuredButton:hover {
+	color: #ffffff;
+}
+.listWrapper {
+	background-image: url(../images/pageElements/listContainerFadeBg.png);
+	border-color: #dbdbdb;
+}
+
+#announcementsContainer li:nth-child(odd) {background-color: #dbdbdb}
+
+#fistankContainer {
+	width: 658px;
+	background: url(../images/pageElements/fishtankContainerBg.jpg) no-repeat;
+	background-position: 20px 40px;
+	border: 1px solid #dbdbdb;
+	padding: 20px;
+}
+	#fistankContainer #fishtankTitle {
+		height: 24px;
+		width: 220px;
+		background: url(../images/pageElements/fishtank_title.gif) no-repeat;
+	}
+	#fistankContainer #fishtankSubTitle {}
+	#fistankContainer p {
+		margin-top:10px;
+		width: 470px;
+	}
+	
+
+/*--- Dashboard/Activities -------------------------------------------------------------------------------------------------------------------*/
+.personalNavigationSubContainer ul {
+	background-color: #4b4d4c;
+}
+		.personalNavigationSubContainer li a {
+			color: #ffffff;
+		}
+		.personalNavigationSubContainer li a:hover {
+			color: #E85B1F;
+		}
+		
+#quickLinks ul,
+#fsoBlogs ul {border-color: #E1DED4}
+
+table.activitiesList tr {border-bottom: 5px solid #ffffff;}
+table.activitiesList tr:nth-child(even) td.itemDescription,
+table.activitiesList tr:nth-child(even) td.itemWeight,
+table.activitiesList tr:nth-child(even) td.itemDue,
+table.activitiesList tr:nth-child(even) td.itemAvailablity,
+table.activitiesList tr:nth-child(even) td.itemStatus {background-color: #F0F0F0;}
+	table.activitiesList td.itemNumber {
+		background-color: #E85B1F;
+		color: #ffffff;
+	}
+	table.activitiesList td.itemDescription {border-left: 5px solid #ffffff;}
+
+table.activitiesList.current td.itemAvailablity,
+table.activitiesList.upcoming td.itemDescription,
+table.activitiesList.upcoming td.itemWeight,
+table.activitiesList.upcoming td.itemAvailablity,
+table.activitiesList.upcoming td.itemDue,
+table.activitiesList.upcoming td.itemStatus,
+table.activitiesList.expired td.itemWeight,
+table.activitiesList.expired td.itemAvailablity,
+table.activitiesList.expired td.itemDue,
+table.activitiesList.expired td.itemStatus {color: #B0B0B0}
+
+table.activitiesList.current td.itemAvailablity,
+table.activitiesList.expired td.itemAvailablity,
+table.activitiesList.expired td.itemDue {text-decoration: line-through}
+
+
+
+
+ul.announcements li:nth-child(odd) {background-color: #F0F0F0}
+ul.announcements.important li {
+	background-color: #FFDEE0;
+	color: #000;
+}
+	ul.announcements.important li a {color: #D34E4E}
+
+ul.errorMessage {
+	background-color: #FFDEE0;
+	border-color: #BE0B0B;
+}
+	ul.errorMessage li {
+		color: #BE0B0B;
+		background-image: url(../images/pageElements/icon_error.jpg);
+	}
+
+
+.activityBox {
+	border-color: #999999;
+	background: #F9F9F9
+}
+
+.assets ul {border-color: #E1DED4;}
+.assets ul li a {
+	background-image: url(/lmsappresources/images/icons/generic.jpg);
+	width: 180px;
+	word-wrap: break-word;
+	display: block;
+}
+
+table.gradesList tr {border-bottom: 5px solid #ffffff;}
+table.gradesList tr:nth-child(even) td.itemDescription,
+table.gradesList tr:nth-child(even) td.itemWeight,
+table.gradesList tr:nth-child(even) td.itemGrade {background-color: #F0F0F0;}
+	table.gradesList td.itemNumber {
+		background-color: #E85B1F;
+		color: #ffffff;
+	}
+	table.gradesList td.itemDescription {border-left: 5px solid #ffffff;}
+
+table.gradesList .accumulatedGrade {background-color: #FFFDD7}
+
+table.gradesList.notGraded td.itemWeight,
+table.gradesList.notGraded td.itemGrade {color: #B0B0B0}
+
+
+
+.classmatesPagination .pageFirst,
+.classmatesPagination .pagePrevious,
+.classmatesPagination .pageNext,
+.classmatesPagination .pageLast {background-color: #4D4B39}
+.classmatesPagination .pageFirst:hover,
+.classmatesPagination .pagePrevious:hover,
+.classmatesPagination .pageNext:hover,
+.classmatesPagination .pageLast:hover {background-color: #E85B1F}
+.classmate {border-color: #DBDBDB;}
+	.classmate .classmateName {
+		color: #ffffff;
+		background-color: #E85B1F;
+		border: 0px;
+		outline: none;
+	}
+	
+.lightboxContainer {
+	background: #fff;
+}
+.loadingContent {
+	margin:85px auto;
+	width:50px;
+	height: 50px;
+	background: url(../images/pageElements/lightboxLoading.gif) center center no-repeat;
+}
+.emailLightbox {border: 0px !important;}
+	.emailLightbox .closeLightbox {margin: 10px !important;}
+.f4vLightbox {
+	width: 600px !important;
+	height: 384px !important;
+}
+	.f4vLightbox .titleBar1 {
+		margin-bottom: 0px !important;
+	}
+	
+
+.page_navigation a.page_link,
+.page_navigation a.first_link,
+.page_navigation a.last_link,
+.page_navigation .ellipse  {display: none !important}
+
+.page_navigation a.next_link,
+.page_navigation a.previous_link {
+	background: none;
+	border: 0px solid #fff;
+	color: #e58b1f !important;
+	width: auto;
+	height: auto;
+	line-height: 12px;
+	font-size: 12px;
+	text-decoration: underline !important;
+	text-indent: 0px;
+	text-transform: lowercase;
+}
+.page_navigation a.previous_link {
+	border-right: 1px solid #e58b1f;
+	padding-right: 5px;
+}
+.page_navigation a.next_link:hover,
+.page_navigation a.previous_link:hover {background-color: transparent !important}
