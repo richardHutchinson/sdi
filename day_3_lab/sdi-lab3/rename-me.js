@@ -11,9 +11,9 @@
 	
 	//var alphabet = stringVar;
 	var alphabet = prompt("First four letters in the alphabet are?");
-	//var alphabetConfirm = confirm("Are you sure " + alphabet + " is correct?");
+	var alphabetConfirm = confirm("Are you sure " + alphabet + " is correct?");
 	
-	if(alphabet === stringVar/* && alphabetConfirm === true*/){
+	if(alphabet === stringVar && alphabetConfirm === true){
 		console.log("Alphabet validation is good.");
 		
 		var numberTrue = parseInt(prompt("What is 1233 + 1 = ?"));
