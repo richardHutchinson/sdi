@@ -17,13 +17,16 @@
 	console.log(string + stringEscapes + varNumber + varBooleanTrue + varBooleanFalse);
 	
 	
-	/*var confirmBox = confirm(varBooleanTrue);
-	console.log(confirmBox);*/
+	var confirmBox = confirm(varBooleanTrue);
+	console.log(confirmBox);
 	
-	var promptBox = parseInt(prompt(varNumber));
-	console.log(promptBox);
+	var varNumber = parseInt(prompt(varNumber));
+	console.log(varNumber);
 	
-	if(isNaN(promptBox)){
-		console.log("not a number");
+	//rich note: these conditions are not required
+	if(isNaN(varNumber)){
+		console.log(varNumber + " not a number");
+	}else{
+		console.log(varNumber + " is a number");
 	}
 })();
