@@ -18,7 +18,7 @@ console.log("So, let's get to work!");
 
 while (numOfCats > 0) {
     
-    if (employed = true) {
+    if (employed == true) { //rich note: == not =
         
         console.log("I've wrangled another cat.  Only " + numOfCats + " left!");
         
