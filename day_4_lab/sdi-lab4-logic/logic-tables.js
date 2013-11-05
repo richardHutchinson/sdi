@@ -24,7 +24,7 @@ while(a < 8) {
 	p = confirm("First value:  Click OK for true or Cancel for false.");
 	q = confirm("Second value:  Click OK for true or Cancel for false.");
 	r = confirm("Third value:  Click OK for true or Cancel for false.");
-
+	
 	if (p || (q || r)) {
 	    console.log("With " + p + ", " + q + " and " + r + " the outcome is TRUE.");
 	} else {
