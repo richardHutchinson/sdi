@@ -1,6 +1,7 @@
 //var abcString = prompt("Please enter an email address.");
 var abcString = "@ @ @".trim();
 var whiteSpace1 = abcString.replace(/ /g,"");
+
 console.log(whiteSpace1);
 
 // ----
@@ -25,7 +26,7 @@ function abc(abcString) {
 	}
 };
 
-var a = "a,b,c";
+/*var a = "a,b,c";
 var b = ",";
 var c = "/";
 
@@ -36,10 +37,15 @@ function abcStrings(a,b,c) {
 	console.log(abcReplace);
 };
 
-abc(abcString);
-abcStrings(a,b,c);
+for(i=0; i<a.length; i++) {
+	var abcReplace = a.replace(b,c);
+	console.log(abcReplace);
+}
 
-// ----
+abc(abcString);
+abcStrings(a,b,c);*/
+
+// --
 
 //date functionality
 /*var myDate = new Date("11/1/2014");
@@ -51,19 +57,20 @@ var newDate = ((((secondDate - myDate)/1000)/60)/60);
 console.log(newDate);
 */
 
-// ----
+// --
 
-// rich note: ask Lee about this one - not sure why the results are repeating three times
-/*var a = "a,b,c";
+
+var a = "a,b,c";
 var b = ",";
 var c = "/";
 
 function abcStrings(a,b,c) {
 	var abcSplit = a.split(b);
 	var abcNew = "";
+	
 	//console.log(abcSplit);
 	
-	for(i = 0; i < abcSplit.length; i++) {
+	for(var i = 0; i < abcSplit.length; i++) {
 		
 		if(abcNew === "") {
 			abcNew = abcNew + abcSplit[i];
@@ -71,11 +78,12 @@ function abcStrings(a,b,c) {
 			abcNew = abcNew + c + abcSplit[i];
 		}
 		
-		console.log(abcNew);
-		
+		//console.log(abcNew); //this is the returned loop results
 	};
+	
+	console.log(abcNew);
 	
 	//console.log(abcSplit);
 };
 
-abcStrings(a,b,c);*/
+abcStrings(a,b,c);
