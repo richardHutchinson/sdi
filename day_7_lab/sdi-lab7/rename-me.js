@@ -1,4 +1,7 @@
+//console.log(alphabet);
+
 function abcObjectConstructor(a,ab,abc) {
+	console.log(abc);
 	this.a = a;
 	this.ab = ab;
 	this.abc = abc;
@@ -17,13 +20,19 @@ function abcFunction() {
 		var firstObject = "";
 		var secondObject = "";
 		
+		/*for(var key in alphabet) {
+			var test = alphabet[key][i]["A"];
+			//console.log(alphabet[key][0]["A"]);
+			//console.log(alphabet);
+		}*/
+		
 		//note: this is checking the index - i = the 0 index in the json object array in the json.js file
 		if(i == 0) {
 			var firstObject = new abcObjectConstructor(alphabet.abc[i].A,alphabet.abc[i].AB,alphabet.abc[i].ABC);
 			firstObject.abcMethod();
 			
 			console.log("firstObject, index = " + firstObject.a.length + ": " + firstObject.a,firstObject.ab,firstObject.abcdefg);
-			
+			//console.log(firstObject);
 		}else{
 			var secondObject = new abcObjectConstructor(alphabet.abc[i].A,alphabet.abc[i].AB,alphabet.abc[i].ABC);
 			
@@ -31,6 +40,7 @@ function abcFunction() {
 			console.log("secondObject, index = " + secondObject.a.length + ": " + secondObject.a,secondObject.ab,secondObject.abc);
 		}
 	};
+	//console.log(test);
 };
 
 abcFunction();
