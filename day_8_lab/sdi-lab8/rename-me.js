@@ -1,8 +1,10 @@
 //var abcString = prompt("Please enter an email address.");
-var abcString = "@ @ @".trim();
-var whiteSpace1 = abcString.replace(/ /g,"");
+var email = "test@te@s t.com";
 
-console.log(whiteSpace1);
+//var abcString = "@ @ @".trim();
+//var whiteSpace1 = abcString.replace(/ /g,"");
+
+//console.log(whiteSpace1);
 
 // ----
 
@@ -11,20 +13,34 @@ console.log(test + " test");*/
 
 // ----
 
-function abc(abcString) {
-	var atPosition = abcString.indexOf("@");
-	var atCount = abcString.match(/@/g).length;
+//function abc(abcString) {
+function emailTest(email) {
+	var atPosition = email.indexOf("@");
+	var spaceCheck = email.indexOf(" ");
+	var charToAt = email.lastIndexOf("@");
+	//var atCount = email.match(/@/g).length;
 	
+	//console.log(test);
 	//console.log(atCount);
+	
+	if(spaceCheck > 0) {
+		console.log("Please remove all spaces. There is one at index: " + spaceCheck);
+	}
 	
 	if(atPosition > -1) {
 		console.log("@ found");
-	}else if(atCount > 1) {
-		console.log("Please do not use multiple @ symbols.");
 	}else {
 		console.log("Please use a @ symbol");
 	}
+	
+	if(charToAt > atPosition) {
+		console.log("Please do not use multiple @ symbols.");
+	}
+	
+	//note: check spaces and one dot ".", also dot after @ symbole. change the replace and match
 };
+
+emailTest(email);
 
 /*var a = "a,b,c";
 var b = ",";
