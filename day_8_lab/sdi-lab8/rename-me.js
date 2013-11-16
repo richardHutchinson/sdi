@@ -18,6 +18,7 @@ function emailTest(email) {
 	var atPosition = email.indexOf("@");
 	var spaceCheck = email.indexOf(" ");
 	var charToAt = email.lastIndexOf("@");
+	var dotCheck = email.indexOf(".");
 	//var atCount = email.match(/@/g).length;
 	
 	//console.log(test);
@@ -35,6 +36,10 @@ function emailTest(email) {
 	
 	if(charToAt > atPosition) {
 		console.log("Please do not use multiple @ symbols.");
+	}
+	
+	if(dotCheck > 1 && dotCheck > atPosition) {
+		console.log("The \".\" exists and the . is greater than the @ poisition.");
 	}
 	
 	//note: check spaces and one dot ".", also dot after @ symbole. change the replace and match
