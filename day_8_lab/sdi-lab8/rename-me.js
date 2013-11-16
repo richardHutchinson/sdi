@@ -94,7 +94,7 @@ function abcStrings(a,b,c) {
 	for(var i = 0; i < abcSplit.length; i++) {
 		
 		if(abcNew === "") {
-			abcNew = abcNew + abcSplit[i];
+			abcNew = abcSplit[i];
 		}else {
 			abcNew = abcNew + c + abcSplit[i];
 		}
