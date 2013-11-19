@@ -16,7 +16,6 @@
 	
 	console.log(string + stringEscapes + varNumber + varBooleanTrue + varBooleanFalse);
 	
-	
 	var confirmBox = confirm(varBooleanTrue);
 	console.log(confirmBox);
 	
