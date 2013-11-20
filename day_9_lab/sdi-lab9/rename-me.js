@@ -19,7 +19,7 @@ var functionAb = function ab(a,b) {
 var functionC = function c(c) {
 	var stringToNumber = parseFloat(c);
 	
-	//return stringToNumber;
+	return stringToNumber;
 };
 
 var functionDef = function(d,e,f) {
@@ -42,6 +42,6 @@ var returnedValueAb = functionAb(a,b);
 var returnedValueC = functionC(c);
 var returnedValueDef = functionDef(d,e,f);
 
-//console.log(returnedValueAb);
-//console.log(returnedValueC);
+console.log(returnedValueAb);
+console.log(returnedValueC);
 console.log(returnedValueDef);
