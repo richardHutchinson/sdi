@@ -6,6 +6,8 @@ var sum = 0;
 var sum3 = 0;
 var sum5 = 0;
 
+// note: the first question's "or" means both
+
 // problem one
 function sumData(a,b,c,i,sum3,sum5) {
 	
