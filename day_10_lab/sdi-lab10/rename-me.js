@@ -9,14 +9,14 @@ var sum5 = 0;
 // note: the first question's "or" means both
 
 // problem one
-function sumData(a,b,c,i,sum3,sum5) {
+/*function sumData(a,b,c,i,sum3,sum5) {
 	
 	while(i < 1000) {
-		i++;
 		
 		//(i % 3 == 0) || (i % 5 == 0)
 		if(i % 3 == 0) {
 			c += i;
+			//console.log(c);
 			sum3 += i;
 			console.log(i + " Three");
 		};
@@ -26,6 +26,9 @@ function sumData(a,b,c,i,sum3,sum5) {
 			sum5 += i;
 			//console.log(i + " Five");
 		};
+		
+		i++;
+		
 	}
 	
 	console.log(sum3 + ": 3 Total");
@@ -33,7 +36,7 @@ function sumData(a,b,c,i,sum3,sum5) {
 	
 };
 
-sumData(a,b,c,i,sum3,sum5);
+sumData(a,b,c,i,sum3,sum5);*/
 
 // --
 
@@ -43,14 +46,26 @@ function fourMil(sum) {
 	var b = 2;
 	var c = "";
 	
-	for(i = 0; i < 4000000; i++) {
+	for(i = 0; i < 10; i++) { //4000000
 		var c = a + b;
+		//console.log(c + " = c");
+		//console.log(a + " = a");
+		//console.log(b + " = b");
+		//console.log(sum + " sum");
 
-		if(c < 4000000) {
-			if(c % 2 == 0) {
+		if(sum + c < 10) { //4000000
+			
+			//console.log(c + " less c2");
+			
+			if(c % 2 == 0) { //rich note: things that go into the even number will equal 0, else they will equal 1 or the remainder
 				sum += c;
+				//console.log(sum + " sum's new value");
+				//console.log(c + " less c");
+				
 				console.log(c + ": Even number element");
 			}
+		} else {
+			break;
 		}
 		
 		a = b;
